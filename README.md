@@ -25,7 +25,7 @@ $ wget -O script.sh https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/ma
 
 Or if you don't care for error checking or other misc stuff on your terminal
 ```
-$wget -q --content-disposition $(curl -s https://msdnshared.blob.core.windows.net/media/2017/07/Ligman_eBooks_2017.txt | tail -n +2  | awk {'print $1'})
+$ wget -q --content-disposition $(curl -s https://msdnshared.blob.core.windows.net/media/2017/07/Ligman_eBooks_2017.txt | tail -n +2  | awk {'print $1'})
 ```
 
 
