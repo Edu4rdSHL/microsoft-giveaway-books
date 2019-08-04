@@ -19,9 +19,11 @@ if wget -q -O "links-temp.txt" "https://msdnshared.blob.core.windows.net/media/2
       echo "Sucessfully downloaded book number: $COUNTER"
     else
       COUNTER=$[$COUNTER + 1];
-      echo "A error as ocurred while downloading the book: $COUNTER"
+      echo "A error as ocurred while downloading the book: $COUNTER from link: $LINK"
     fi
   done < links.txt
+  rm -f "links.txt"
+  echo "Job finished."
 else
   echo "Error downloading books links, exiting."
   exit
