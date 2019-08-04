@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VERSION=0.1
+VERSION=0.2
 echo "Microsoft GIVE AWAY files downloader. Version $VERSION"
 echo
 echo "Star the project and follow @edu4rdshl in Github/Twitter, it will be appreciated."
@@ -13,12 +13,12 @@ if wget -q -O "links-temp.txt" "https://msdnshared.blob.core.windows.net/media/2
   echo "Total books to download: $TOTAL_BOOKS"
   echo "Downloading books now, do not interrupt the process..."
   COUNTER=0;
-  while read LINK; do
-    if wget -q --content-disposition $LINK; then
-      COUNTER=$[$COUNTER + 1];
+  while read -r LINK; do
+    if wget -q --content-disposition "$LINK"; then
+      COUNTER=$((COUNTER + 1));
       echo "Sucessfully downloaded book number: $COUNTER"
     else
-      COUNTER=$[$COUNTER + 1];
+      COUNTER=$((COUNTER + 1));
       echo "A error as ocurred while downloading the book: $COUNTER from link: $LINK"
     fi
   done < links.txt
