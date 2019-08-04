@@ -13,6 +13,8 @@ Microsoft creates a GIVE AWAY every year and put there a lot of books that you c
 # How I can get the books?
 You can just use [my script](https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh) to download they. Write in your terminal:
 
+**Note:** You need `wget` installed in your system.
+
 ```
 $ curl -O https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && sh script.sh
 ```
