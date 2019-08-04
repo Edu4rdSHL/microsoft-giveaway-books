@@ -23,6 +23,12 @@ Or
 $ wget -O script.sh https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && sh script.sh
 ```
 
+Or if you don't care for error checking or other misc stuff on your terminal
+```
+$ wget -q --content-disposition $(curl -s https://msdnshared.blob.core.windows.net/media/2017/07/Ligman_eBooks_2017.txt | tail -n +2  | awk {'print $1'})
+```
+
+
 # Windows
 
 For windows you can use any of the scripts provided in:
