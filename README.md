@@ -21,4 +21,11 @@ Or
 $ wget -O script.sh https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && sh script.sh
 ```
 
+# Windows
+
+For windows you can use any of the scripts provided in:
+
+* https://msdnshared.blob.core.windows.net/media/2017/07/ELigman_DownloadAll_Powershell2.txt
+* http://www.mssmallbiz.com/ericligman/Key_Shorts/Eligman_DownloadAll_PowerShell.txt
+
 Give me a star and enjoy it.
