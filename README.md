@@ -20,7 +20,7 @@ $ curl -O https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/scrip
 ```
 Or
 ```
-$ wget -O script.sh https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && sh script.sh
+$ wget -O https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && sh script.sh
 ```
 
 Or if you don't care for error checking or other misc stuff on your terminal
