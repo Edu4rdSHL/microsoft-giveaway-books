@@ -19,11 +19,10 @@ for URL in ${GIVEAWAY_URLS[@]}; do
     echo "Downloading books now, do not interrupt the process..."
     COUNTER=0;
     while read -r LINK; do
+      COUNTER=$((COUNTER + 1));
       if curl -sSfLo "$(basename "$(curl -sSfw '%{redirect_url}' "$LINK")")" "$LINK"; then
-        COUNTER=$((COUNTER + 1));
         echo "Sucessfully downloaded book: $COUNTER/$TOTAL_BOOKS"
       else
-        COUNTER=$((COUNTER + 1));
         echo "A error as ocurred while downloading the book: $COUNTER from link: $LINK"
       fi
     done < links.txt
