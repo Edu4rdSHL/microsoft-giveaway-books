@@ -13,7 +13,7 @@ Just use [my script](https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/m
 **Note:** You need `curl` installed in your system, it's installed by default on almost any distro.
 
 ```
-$ curl -O https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && bash script.sh
+$ curl -LO https://github.com/Edu4rdSHL/microsoft-giveaway-books/raw/master/script.sh && bash script.sh
 ```
 
 
