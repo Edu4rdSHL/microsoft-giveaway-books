@@ -5,7 +5,8 @@ echo "Made with love by @edu4rdshl."
 echo
 echo "Downloading books links..."
 
-GIVEAWAY_URLS=("https://msdnshared.blob.core.windows.net/media/2017/07/Ligman_eBooks_2017.txt" "http://www.mssmallbiz.com/ericligman/Key_Shorts/MSFTFreeEbooks.txt")
+# GIVEAWAY_URLS=("https://msdnshared.blob.core.windows.net/media/2017/07/Ligman_eBooks_2017.txt" "http://www.mssmallbiz.com/ericligman/Key_Shorts/MSFTFreeEbooks.txt")
+GIVEAWAY_URLS=("https://raw.githubusercontent.com/Edu4rdSHL/microsoft-giveaway-books/master/files/Ligman_eBooks_2017.txt" "https://raw.githubusercontent.com/Edu4rdSHL/microsoft-giveaway-books/master/files/MSFTFreeEbooks.txt")
 
 for URL in ${GIVEAWAY_URLS[@]}; do
   if [ $(curl -sSfLo "links-temp.txt" "$URL" -w '%{http_code}\n') -eq 200 ]; then
